@@ -1,4 +1,4 @@
-Write a Dart code snippet to calculate the sum of two numbers, num1 and num2.
+#Write a Dart code snippet to calculate the sum of two numbers, num1 and num2.
 Hint: Use the + operator
 
 void main() {
@@ -14,5 +14,65 @@ void main() {
   
 }
 
-Write a Dart code snippet to concatenate two strings, str1 and str2.
+#Write a Dart code snippet to concatenate two strings, str1 and str2.
 Hint: Use the + operator.
+
+void main() {
+  
+  String one="Hello";
+  String two="Haider";
+  
+
+  String output =one+" "+two;
+  
+  print(output);
+}
+
+#Create an empty list named "numbersList"
+
+void main() {
+  
+  List<int> numberList =[];
+  
+  print(numberList);
+}
+
+Create an empty map named "person"
+
+void main() {
+  
+  Map<String, dynamic> person = 
+  {
+    "hello":"hi",
+    "Name":"Haider"
+  };
+  
+  print(person["hello"]);
+}
+
+Write a Dart code snippet to check if a number num is positive, negative, or zero.
+
+void main() {
+  
+  int x=0;
+  
+  if(x<0){
+    print("This is a negative number");
+  }
+  else{
+    if(x>0){
+      print("This is a positive number");
+    }
+    else{
+      if(x==0){
+        print("This number is Zero");
+      }
+      else{print("Invalid Input");
+    }
+  }
+  
+}
+}
+
+Write a Dart code snippet using a switch statement to print the name of a month based on its numeric representation.
+For example, if the month number is 1, the code should print "January".
