@@ -1,0 +1,18 @@
+Write a Dart code snippet to calculate the sum of two numbers, num1 and num2.
+Hint: Use the + operator
+
+void main() {
+  
+  int num1;
+  int num2;
+  
+  num1=5;
+  num2=6;
+  
+  int sum2= num1+num2;
+  print(sum2);
+  
+}
+
+Write a Dart code snippet to concatenate two strings, str1 and str2.
+Hint: Use the + operator.
