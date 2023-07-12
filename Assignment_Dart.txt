@@ -76,3 +76,89 @@ void main() {
 
 Write a Dart code snippet using a switch statement to print the name of a month based on its numeric representation.
 For example, if the month number is 1, the code should print "January".
+
+void main() {
+ 
+  
+  int month_number =13;
+  
+  switch (month_number) {
+    case 1: print("January");break;
+    case 2: print("February");break;
+    case 3: print("March");break;
+    case 4: print("April");break;
+    case 5: print("May");break;
+    case 6: print("June");break;
+    case 7: print("July");break;
+    case 8: print("August");break;
+    case 9: print("September");break;
+    case 10: print("October");break;
+    case 11: print("November");break;
+    case 12: print("December");break;
+    default:print("Invalid Number");
+      
+  }
+
+}
+
+a. Write a Dart code snippet to print the numbers from 1 to 10 using a for loop. 
+b. Write a Dart code snippet to print the even numbers from 2 to 20 using a while loop.
+
+void main() {
+  
+  print("(a)number");
+  
+  for(int i=1; i<=10;i++)
+  {
+    print(i);
+  }
+  print("(b)number");
+  for(int i=1; i<=10;i++)
+  {
+    i=i+1;
+    print(i);
+    
+  }
+  
+
+}
+
+Write a Dart function named greet that takes a parameter name and prints a greeting message. Call the function with the argument "Alice".
+
+void greet(String x){
+  print("Hello $x");
+}
+
+void main() {
+  
+  greet("adiba");
+  
+
+}
+
+a. Define a Dart function named calculateSum that takes two parameters num1 and num2 and returns their sum.
+b. Define a Dart function named isEven that takes a parameter number and returns true if the number is even, and false otherwise.
+
+
+void sum(int num1,int num2){
+  print(num1+num2);
+}
+
+bool isEven(int number){
+  
+  return number%2==0;
+  
+}
+
+void main(){
+  
+  int num1=5;
+  int num2=6;
+  sum(num1,num2);
+  
+  bool result = isEven(num2);
+  
+  print(result);
+}
+
+
