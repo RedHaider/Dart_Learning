@@ -162,3 +162,69 @@ void main(){
 }
 
 
+Define a class named Person with properties name and age. Create an object of the Person class and assign values to its properties.
+
+class Person{
+  
+  int age=0;
+  String name='';
+  
+  Person(String name, int age){
+    this.name = name;
+    this.age = age;
+  }
+}
+
+void main(){
+  
+  String name="Haider";
+  int age =26;
+  
+  Person person = Person(name,age);
+  
+  print(person.name);
+  print(person.age);
+  
+}
+
+
+Modify the Person class from the previous question to include a method named introduce that prints the person's name and age using the this keyword.
+
+class Person{
+  
+  int age=0;
+  String name='';
+  
+  Person(this.name, this.age);
+  
+  void introduce(){
+    print("${this.name} ${this.age}");
+  }
+}
+
+void main(){
+  
+  String name="Redwan";
+  int age =26;
+  
+  Person person = Person(name,age);
+  
+  person.introduce();
+  
+}
+
+
+Write a Dart code snippet to convert a double variable num to an integer.
+
+
+void main(){
+  
+  double num= 3.14;
+  
+  int convertedNum = num.toInt();
+  
+  print(num);
+  print(convertedNum);
+  
+}
+
