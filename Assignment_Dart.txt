@@ -319,6 +319,59 @@ void main(){
 }
 
 
+a. Define a Dart function named calculateAverage that takes a list of numbers as a parameter and returns the average. 
+b. Define a Dart function named isPalindrome that takes a string str as a parameter and returns true if it is a palindrome, and false otherwise.
+
+double average(List<double> number)
+{  
+  double sum=0;
+  double average=0;
+  for(var ave in number)
+  {
+    sum= sum+ave;
+  }
+  
+   average= sum/number.length;
+  
+  return average;
+}
+
+void main(){
+  
+  List<double> number=[2,1,3,4,2];
+  
+  double averag = average(number);
+  
+  print(averag);
+  
+}
+
+
+Define a class named Rectangle with properties width and height. Create an object of the Rectangle class and assign values to its properties
+
+class Rectangle{
+  double width=0;
+  double height=0;
+  
+  Rectangle(double width, double height)
+  {
+    this.width = width;
+    this.height = height;
+  }
+}
+
+void main(){
+  
+  double width=10;
+  double height=15;
+  
+  Rectangle myrectangle = Rectangle(width, height);
+  
+  print("${myrectangle.width} ${myrectangle.height}");
+  
+}
+
+
 
 
 
