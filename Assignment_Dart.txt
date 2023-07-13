@@ -266,6 +266,7 @@ a. Add the key-value pair "marks": 90", and a list of "family"(Map) that will co
 b. Print the person map & then print the name of the 3rd entry of the map in "family".
 
 
+
 void main(){
   
   List<Map<String, dynamic>> data= [
@@ -274,11 +275,53 @@ void main(){
     {"name":"Redwan","age":30},
   ];
   
+  print(data);
+  
+  print(data[2]["name"]);
+  
   
 }
 
 
-to be continued
+
+
+
+Write a Dart code snippet to check if a string str is empty or not.
+
+
+
+void main(){
+  
+  String str = "";
+  
+  if(str.isEmpty){
+    print("its Empty");
+    
+  }
+  else{print("its not empty");}
+  
+  
+}
+
+a. Write a Dart code snippet to find the sum of all numbers from 1 to 100 using a for loop.
+b. Write a Dart code snippet to find the factorial of a number num using a while loop
+
+
+void main(){
+  
+  int sum=0;
+  
+  for(int i=0;i<=100;i++){
+    sum=sum+i;
+  }
+  
+  print(sum);
+}
+
+
+
+
+
 
 
 
