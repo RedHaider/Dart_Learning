@@ -372,6 +372,65 @@ void main(){
 }
 
 
+Normal class calling 
+
+class class_name
+{
+  String a="";
+  
+  
+   greeetings(String a){
+     print("hello mr. $a");
+   }
+}
+
+void main()
+{   String a ="Haider";
+    class_name greeting = new class_name();
+  
+   greeting.greeetings(a);
+}
+
+#Using getter setter
+
+class class_name
+{
+  String name="";
+  
+  String get sotokan
+  {
+    return name;
+  }
+  
+  void set sotokan(String name)
+  {
+    this.name = name;
+  }
+  
+  void result()
+  {
+    print(name);
+  }
+  
+  
+  
+}
+
+void main()
+{   
+  
+  class_name jinga = new class_name();
+  
+  jinga.name= "are sudanir phuwa, i kichchci";
+  
+  jinga.result();
+  
+}
+
+
+
+
+
 
 
 
