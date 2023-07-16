@@ -1,0 +1,48 @@
+OOP of dart
+class Person {
+  String name='';
+  int age=0;
+  
+  void sayHello() 
+  {
+    print ("Hello , My name is  $name");
+    print("My age is $age");
+  }
+}
+
+void main()
+{   
+  Person information =  Person();
+  
+  information.name="Haider";
+  information.age= 30;
+  
+  information.sayHello();
+}
+
+
+
+#Constructors: Constructors are special methods used to initialize objects. Dart provides default constructors, but you can also define custom constructors. Here's an example:
+
+class Person {
+  String name='';
+  int age=0;
+  
+  Person(this.name, this.age);
+  
+  void sayHello()
+  {
+    print("Hello, my name is $name");
+    print("Hello, my age is $age");
+  }
+}
+
+void main()
+{   
+  Person information =  Person('Haider',30);
+  
+  
+  information.sayHello();
+}
+
+
