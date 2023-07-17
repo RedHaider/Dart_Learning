@@ -45,4 +45,98 @@ void main()
   information.sayHello();
 }
 
+#Inheritance: Inheritance allows you to create new classes based on existing classes. The new class inherits the properties and methods of the existing class, and you can also add new properties and methods or override existing ones.
+
+class Person {
+  String name='';
+  int age=0;
+  
+  Person(this.name, this.age);
+  
+  void sayHello()
+  {
+    print("Hello, my name is $name");
+    print("Hello, my age is $age");
+  }
+}
+
+class Student extends Person{
+  String school='';
+  
+  Student(String name, int age, this.school) : super(name,age);
+  
+  void academic(){
+    print("$name studies in $school with age $age ");
+  }
+  
+}
+
+void main()
+{   
+  Person information =  Person('Haider',30);
+  Student academics = Student('Adiba',23,"VNSC");
+  
+  academics.academic();
+  
+  academics.sayHello();
+  
+  
+  information.sayHello();
+  
+  
+}
+
+#Encapsulation: Encapsulation is the concept of hiding the internal implementation details of an object and providing access to properties and methods through well-defined interfaces. In Dart, you can achieve encapsulation by using access modifiers: public, private, and protected. By default, all members are public, but you can use an underscore _ prefix to make them private to the library.
+
+class Person {
+  String name='';
+  int _age=0;
+  
+  Person(this.name, this._age);
+  
+  void sayHello(){
+    print("Hello, the age is $_age with name $name");
+  }
+}
+
+void main()
+{   
+  Person spec = Person("Haider", 30);
+  
+   print(spec.name);
+   spec.sayHello();
+  print(spec._age);
+}
+
+
+Method Overriding: Dart allows you to override methods defined in the superclass by providing a new implementation in the subclass. This enables you to customize the behavior of inherited methods. Here's an example:
+
+class Animal {
+  String animalName;
+
+  Animal(this.animalName);
+
+  void makeSound() {
+    print("The animal is $animalName");
+  }
+}
+
+class Dog extends Animal {
+  Dog(String animalName) : super(animalName);
+
+  @override
+  void makeSound() {
+    print("The dog says $animalName");
+  }
+}
+
+void main() {
+  Animal animal = Animal("Dog");
+  animal.makeSound();
+
+  Dog dog = Dog("Meow");
+  dog.makeSound();
+}
+
+
 
